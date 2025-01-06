@@ -1,20 +1,24 @@
 import { Component } from '@angular/core';
 // import { RouterOutlet } from '@angular/router';
-import { HomeComponent } from './home/home.component';
-import { GuestComponent } from './guest/guest.component';
-import { BlogComponent } from './blog/blog.component';
-import { NavbarComponent } from './navbar/navbar.component';
-import { RouterOutlet } from '@angular/router';
+// import { HomeComponent } from './pages/home/home.component';
+// import { GuestComponent } from './pages/guest/guest.component';
+// import { BlogComponent } from './pages/blog/blog.component';
+// import { NavbarComponent } from './navbar/navbar.component';
+// import { RouterOutlet } from '@angular/router';
+import { ContainerComponent } from './components/container/container.component';
+import { ButtonComponent } from './components/button/button.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [
-    RouterOutlet,
-    NavbarComponent,
+    // RouterOutlet,
+    // NavbarComponent,
     // HomeComponent,
-    GuestComponent,
+    // GuestComponent,
     // BlogComponent
+    ButtonComponent,
+    ContainerComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'

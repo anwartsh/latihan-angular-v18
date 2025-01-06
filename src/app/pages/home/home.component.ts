@@ -1,10 +1,10 @@
 import { Component, Input } from '@angular/core';
-import { ButtonComponent } from '../button/button.component';
+import { ButtonComponent } from '../../components/button/button.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [ButtonComponent],
+  // imports: [ButtonComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })

@@ -1,11 +1,8 @@
-<button type="button" (click)="authentication()" class="btn btn-primary"> {{isLoggedIn ? 'logout' : 'login'}} </button>
-
-<app-navbar></app-navbar>
-
-@if (isLoggedIn) {
-  <router-outlet></router-outlet>
-   <!-- <app-blog></app-blog> -->
-}
-@else {
-  <app-guest></app-guest>
-}
+<app-container>
+  <app-button></app-button>
+</app-container>
+<div>Title</div>
+<img src="" alt="">
+<div>
+  <app-button></app-button>
+</div>

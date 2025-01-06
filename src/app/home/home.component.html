@@ -1,0 +1,30 @@
+<h1>This Home, Hello <span (mouseover)="onMouseOver()" (mouseout)="onMouseLeft()">
+    {{name}}
+</span> </h1>
+
+<div>
+    <img [src]="imageUrl" alt="ini gambar"/>
+</div>
+
+<p [contentEditable]="canEdit">
+    Teknologi yang digunakan VS Code, React JS, Javascript
+</p>
+
+<p>
+    data berikut : <br>
+    {{testInput}}
+</p>
+
+<ul>
+    @for (item of data; track $index) {
+        <li> {{item.nim}} - {{item.name}} </li>
+    }
+</ul>
+
+<button type="button" class="btn btn-warning" (click)="editContent()">Edit Teknologi</button>
+
+<app-button class="ms-3" (addItemEvent)="addItem($event)"></app-button>
+<p>🐢 all the way down {{ items.length }}</p>
+<div>
+    {{items}}
+</div>
